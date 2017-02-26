@@ -31,7 +31,7 @@ public class RMIGamaServer extends UnicastRemoteObject implements RMIGamaServerI
 	@Override
 	public void getTurn(String clientName) throws RemoteException {
 		// TODO Auto-generated method stub
-		System.out.println("client " + clientName + " has finished");
+		System.out.println("Client " + clientName + " has finished");
 		
 		int pos = this.findByName(clientName);
 		
@@ -44,6 +44,7 @@ public class RMIGamaServer extends UnicastRemoteObject implements RMIGamaServerI
 		}else{
 			gamaClients.get(pos + 1).setTurn(true);
 			System.out.println("Client " + gamaClients.get(pos + 1).getName() + " is Next");
+			System.out.println();
 		}
 	}
 

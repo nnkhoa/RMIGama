@@ -10,4 +10,5 @@ public interface RMIGamaClientInterface extends Remote {
 	public String getName() throws RemoteException;
 	public void setName(String name) throws RemoteException;
 	public void recieveStringFromServer(String string) throws RemoteException;
+	
 }
